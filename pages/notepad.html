@@ -37,8 +37,52 @@
     width: 100%;
     height : calc(100vh - 100px);
   }
-
-
+#files-list button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+div#files-list {
+    position: relative;
+}div#files-list.disabled {
+    opacity: 0.4;
+}
+.list {
+    position: absolute;
+    top: 23px;
+    border: 1px solid lightgray;
+    padding: 2px 5px;
+    background: #fff;
+}
+button.remove {
+    background: red;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+div#files-list {
+    position: relative;
+    width: 220px;
+    display: inline-block;
+}
+.part {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+}
+button.text {
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    text-align: left;
+}
+#files-list .list{
+  display: none;
+}
+#files-list.open .list{
+  display: block;
+}
   </style>
 </head>
 <body  >
