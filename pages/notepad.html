@@ -2,10 +2,9 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>Select url</title>
+  <title>Notepad</title>
   <style>
   body{
-    width: 250px;
     font-size: 18px;
   }
   .btn, .btn-large, .btn-small {
@@ -25,7 +24,6 @@
     height: 21px;
     line-height: 23px;
     padding: 0 16px;
-    text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
 		}
@@ -35,16 +33,27 @@
     div#message {
       padding: 4px 2px;
   }
+  #text{
+    width: 100%;
+    height : calc(100vh - 100px);
+  }
 
 
   </style>
 </head>
-<body class="popup-box" >
-  <h3 id="title">Choose url</h3>
-  <input type="text" id="url"/>
-  <button type="button" id="submit" class="btn">Check</button> 
-  <div id="message"></div>
-  <input type="text" id="short" class="hidden"/>
-  <script src="/js/popup.js"></script>
+<body  >
+  <div class="buttons">
+    <!-- <button type="button" class="btn extention">Save in extention</button> -->
+    <button type="button" class="btn local">Save to computer</button>
+    <button type="button" class="btn new">Start new</button>
+  </div>
+  <div class="title">
+      <label id="title-label">name: </label><input type="text" id="title"/>
+  </div>
+    <textarea id="text"></textarea>
+  <script src="../lib/jQuery.js"></script>
+  <script src="../lib/chosen.jquery.min.js"></script>
+  <link rel="style/txt" href="../lib/chosen.min.css"></link>
+  <script src="../js/notepad.js"></script>
 </body>
 </html>
