@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Select url</title>
+  <style>
+  body{
+    width: 250px;
+    font-size: 18px;
+  }
+  .btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    font-size: 11px;
+    outline: 0;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 21px;
+    line-height: 23px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+		}
+    .hidden{
+      display: none;
+    }
+    div#message {
+      padding: 4px 2px;
+  }
+
+
+  </style>
+</head>
+<body class="popup-box" >
+  <h3 id="title">Choose url</h3>
+  <input type="text" id="url"/>
+  <button type="button" id="submit" class="btn">Check</button> 
+  <div id="message"></div>
+  <input type="text" id="short" class="hidden"/>
+  <script src="/js/popup.js"></script>
+</body>
+</html>

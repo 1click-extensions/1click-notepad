@@ -1,0 +1,11 @@
+{
+  "paste": {"message": "הדבק כתובת או השתמש בנוכחית" },
+  "submit": {"message": "לקצר" },
+  "success": {"message": "הקישור הקצר נוצר" },
+  "error": {"message": "סליחה, משהו לא עובד" },
+  "please_wait": {"message": "אנא המתן" },
+  "browser_action": {"message": "קבל קישור קצר" },
+  "ext_desc": {"message": "קבל קישור קצר בלחיצה אחת" },
+  "ext_name": {"message": "קישור קצר בלחיצה אחת" }
+}
+

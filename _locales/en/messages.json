@@ -1,0 +1,7 @@
+{
+  "save": {"message": "Save text" },
+  "browser_action": {"message": "open notepad" },
+  "ext_desc": {"message": "Write and save text in one click" },
+  "ext_name": {"message": "1Click notepad" }
+}
+
