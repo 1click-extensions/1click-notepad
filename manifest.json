@@ -7,7 +7,7 @@
       "page": "pages/background.html",
       "persistent": false
     },
-
+    "permissions" : ["unlimitedStorage"],
     "browser_action":{
       "default_icon": "images/browseraction.png",
       "default_title": "__MSG_browser_action__"

@@ -44,9 +44,10 @@
 }
 div#files-list {
     position: relative;
-}div#files-list.disabled {
-    opacity: 0.4;
 }
+/*div#files-list.disabled {
+    opacity: 0.4;
+}*/
 .list {
     position: absolute;
     top: 23px;
@@ -54,12 +55,30 @@ div#files-list {
     padding: 2px 5px;
     background: #fff;
 }
-button.remove {
+#files-list button.remove {
     background: red;
     border-radius: 50%;
     color: #fff;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 8px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+#files-list button.chosen{
+     border: 1px solid lightgray;
+     padding-right: 22px;
+     position: relative;
+}
+button.chosen:after {
+    content: "^";
+    padding: 0 8px;
+    transform: rotate(180deg);
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: text-bottom;
+    position: absolute;
+    right: 0;
+    top: -6px;
 }
 div#files-list {
     position: relative;
@@ -83,6 +102,12 @@ button.text {
 #files-list.open .list{
   display: block;
 }
+.warning{
+  display: none;
+}
+.warning.show{
+  display: block;
+}
   </style>
 </head>
 <body  >
@@ -91,6 +116,10 @@ button.text {
     <button type="button" class="btn local">Save to computer</button>
     <button type="button" class="btn new">Start new</button>
   </div>
+ <!--  <div class="warning">
+    <span class="text">To save file you need delete other files or </span>
+    <button type="button" class="request">allow big storage</button>
+  </div> -->
   <div class="title">
       <label id="title-label">name: </label><input type="text" id="title"/>
   </div>

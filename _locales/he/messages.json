@@ -1,11 +1,9 @@
 {
-  "paste": {"message": "הדבק כתובת או השתמש בנוכחית" },
-  "submit": {"message": "לקצר" },
-  "success": {"message": "הקישור הקצר נוצר" },
-  "error": {"message": "סליחה, משהו לא עובד" },
-  "please_wait": {"message": "אנא המתן" },
-  "browser_action": {"message": "קבל קישור קצר" },
-  "ext_desc": {"message": "קבל קישור קצר בלחיצה אחת" },
-  "ext_name": {"message": "קישור קצר בלחיצה אחת" }
+  "save_file": {"message": "שמור טקסט למחשב" },
+  "new_file": {"message": "קובץ חדש" },
+  "title_label": {"message": "שם המסמך" },
+  "choose_recent": {"message": "מסמכים קודמים" },
+  "browser_action": {"message": "פתח יומן רשימות" },
+  "ext_desc": {"message": "כתוב ושמור טקסטים בלחיצה אחת" },
+  "ext_name": {"message": "יומן רשימות בלחיצה אחת" }
 }
-
