@@ -28,7 +28,7 @@ notepad = {
     },
     restart : function(){
         title.bind('keydown.text', function(){
-            notepad.onTitleSettedManually();
+            setTimeout(notepad.onTitleSettedManually,2);
         });
         textarea.bind('keydown.text', function(){
             setTimeout(function(){
@@ -47,6 +47,8 @@ notepad = {
     },
     clear : function(){
         title.add(textarea).val('');
+        title.data('title setted',0)
+        title.data('title manually setted',0)
         notepad.enableList();
     },
     addList : function(){
@@ -107,8 +109,10 @@ notepad = {
         //textarea.unbind('keydown.text');
     },
     onTitleSettedManually : function(){
-        title.data('title manually setted',1);
-        notepad.onTitleSetted();
+        if(title.val().length){
+            title.data('title manually setted',1);
+            notepad.onTitleSetted();
+        }
     },
     saveInExtention : function(){
         // if(JSON.stringify(localStorage).length >= 278){

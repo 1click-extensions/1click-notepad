@@ -1,8 +1,8 @@
 {
-  "save_file": {"message": "Save text to file" },
-  "new_file": {"message": "New file" },
-  "title_label": {"message": "File name" },
-  "choose_recent": {"message": "Load recent files" },
+  "save_file": {"message": "Save text to document" },
+  "new_file": {"message": "New document" },
+  "title_label": {"message": "Document name" },
+  "choose_recent": {"message": "Load recent documents" },
   "browser_action": {"message": "open notepad" },
   "ext_desc": {"message": "Write and save text in one click" },
   "ext_name": {"message": "1Click notepad" }
