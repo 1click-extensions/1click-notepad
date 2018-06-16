@@ -50,6 +50,9 @@ notepad = {
         title.data('title setted',0)
         title.data('title manually setted',0)
         notepad.enableList();
+        if( notepad.getAllSaved().length>2){
+            checkIfRankNeededAndAndAddRank();
+        }
     },
     addList : function(){
         if(!$('#files-list').length){
@@ -151,6 +154,7 @@ notepad = {
          link.attr('href', 'data:' + 'text/docx' + ';charset=utf-8,' + encodeURIComponent(text));
          //link.appendTo($('body'));
          link[0].click(); 
+         setTimeout(checkIfRankNeededAndAndAddRank, 3000);
          //link.remove();
     },
     removeFile: function(title){
